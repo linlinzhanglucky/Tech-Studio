@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Log - Tech Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>Tech Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="progress.html" class="active">Progress</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-chart-line"></i> Progress Log</h1>
+            <p>Daily learnings, achievements, and project milestones</p>
+        </div>
+    </section>
+
+    <!-- Progress Stats -->
+    <section class="progress-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3 id="streak-count">15</h3>
+                    <p>Day Streak</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>8</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>45</h3>
+                    <p>Commits This Month</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>120+</h3>
+                    <p>Hours Learned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="progress-timeline">
+        <div class="container">
+            <div class="timeline-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="project">Projects</button>
+                <button class="filter-btn" data-filter="learning">Learning</button>
+                <button class="filter-btn" data-filter="achievement">Achievements</button>
+            </div>
+
+            <div class="timeline">
+                <!-- November 2025 -->
+                <div class="timeline-month">
+                    <h2><i class="fas fa-calendar"></i> November 2025</h2>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot achievement"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 16, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>Completed Vision Transformer (ViT) Implementation</h3>
+                        <p>Built a complete Vision Transformer from scratch using PyTorch. Implemented multi-head attention, patch embedding, and position encoding. Achieved 85% accuracy on CIFAR-10.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                        <div class="timeline-links">
+                            <a href="#" class="timeline-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot learning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 15, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>LLM Fine-tuning with PEFT and LoRA</h3>
+                        <p>Studied Parameter-Efficient Fine-Tuning techniques. Implemented LoRA for fine-tuning LLaMA-7B on custom dataset with 10x memory reduction.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Fine-tuning</span>
+                            <span class="tag">LoRA</span>
+                        </div>
+                        <div class="timeline-links">
+                            <a href="#" class="timeline-link"><i class="fas fa-link"></i> Read Notes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="project">
+                    <div class="timeline-dot project"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 13, 2025</span>
+                        <div class="timeline-badge project">
+                            <i class="fas fa-code"></i> Project
+                        </div>
+                        <h3>Object Detection Pipeline with YOLOv8</h3>
+                        <p>Developed an end-to-end object detection system using YOLOv8. Trained on custom dataset with 5000+ annotated images. Deployed with FastAPI backend.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">YOLO</span>
+                            <span class="tag">Deployment</span>
+                        </div>
+                        <div class="timeline-links">
+                            <a href="#" class="timeline-link"><i class="fab fa-github"></i> GitHub Repo</a>
+                            <a href="#" class="timeline-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="achievement">
+                    <div class="timeline-dot achievement"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 10, 2025</span>
+                        <div class="timeline-badge achievement">
+                            <i class="fas fa-trophy"></i> Achievement
+                        </div>
+                        <h3>Completed Deep Learning for Computer Vision Course</h3>
+                        <p>Successfully completed Columbia University's DLCV course. Covered CNNs, object detection, semantic segmentation, GANs, and diffusion models.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Course</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot learning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 8, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>Diffusion Models and Stable Diffusion</h3>
+                        <p>Deep dive into diffusion probabilistic models. Implemented DDPM from scratch and fine-tuned Stable Diffusion on custom art dataset.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">Diffusion</span>
+                            <span class="tag">Image Generation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="project">
+                    <div class="timeline-dot project"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Nov 5, 2025</span>
+                        <div class="timeline-badge project">
+                            <i class="fas fa-code"></i> Project
+                        </div>
+                        <h3>RAG-based Chatbot with LangChain</h3>
+                        <p>Built a Retrieval-Augmented Generation chatbot using LangChain, ChromaDB, and OpenAI API. Indexed 1000+ technical documents for domain-specific Q&A.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">RAG</span>
+                        </div>
+                        <div class="timeline-links">
+                            <a href="#" class="timeline-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- October 2025 -->
+                <div class="timeline-month">
+                    <h2><i class="fas fa-calendar"></i> October 2025</h2>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot learning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 28, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>Semantic Segmentation with U-Net</h3>
+                        <p>Implemented U-Net architecture for medical image segmentation. Trained on brain MRI dataset with Dice coefficient of 0.92.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Segmentation</span>
+                            <span class="tag">Medical AI</span>
+                            <span class="tag">U-Net</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="project">
+                    <div class="timeline-dot project"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 20, 2025</span>
+                        <div class="timeline-badge project">
+                            <i class="fas fa-code"></i> Project
+                        </div>
+                        <h3>Multi-modal Sentiment Analysis</h3>
+                        <p>Developed a multi-modal model combining text (BERT) and image (ResNet) features for social media sentiment analysis. Achieved 88% accuracy.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Multi-modal</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="achievement">
+                    <div class="timeline-dot achievement"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 15, 2025</span>
+                        <div class="timeline-badge achievement">
+                            <i class="fas fa-trophy"></i> Achievement
+                        </div>
+                        <h3>Published First ML Blog Post</h3>
+                        <p>Published comprehensive guide on "Understanding Attention Mechanisms in Deep Learning" - received 500+ views in first week.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Community</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot learning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 10, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>MLOps with Weights & Biases</h3>
+                        <p>Learned experiment tracking, hyperparameter tuning, and model versioning. Set up automated ML pipeline with W&B sweeps.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">MLOps</span>
+                            <span class="tag">W&B</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="project">
+                    <div class="timeline-dot project"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 5, 2025</span>
+                        <div class="timeline-badge project">
+                            <i class="fas fa-code"></i> Project
+                        </div>
+                        <h3>Time Series Forecasting with LSTM</h3>
+                        <p>Built stock price prediction model using LSTM networks. Implemented attention mechanism for improved long-term dependency capture.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Time Series</span>
+                            <span class="tag">LSTM</span>
+                            <span class="tag">Finance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-type="learning">
+                    <div class="timeline-dot learning"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 1, 2025</span>
+                        <div class="timeline-badge learning">
+                            <i class="fas fa-book"></i> Learning
+                        </div>
+                        <h3>Started Learning Reinforcement Learning</h3>
+                        <p>Began Stanford's RL course. Implemented Q-learning and DQN for simple game environments (CartPole, Atari).</p>
+                        <div class="timeline-tags">
+                            <span class="tag">RL</span>
+                            <span class="tag">Q-learning</span>
+                            <span class="tag">DQN</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Entry Button -->
+    <div class="floating-btn">
+        <button class="add-entry-btn" onclick="openAddEntryModal()">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-brain"></i> Tech Studio</h3>
+                    <p>Open-source AI/ML resource collection for engineers and researchers</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="progress.html">Progress Log</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Studio. Open Source & Free to Use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/progress.js"></script>
+</body>
+</html>
+

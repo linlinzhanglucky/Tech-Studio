@@ -1,0 +1,43 @@
+title: Tech Studio - AI Engineer Resources
+description: A comprehensive collection of AI/ML resources, daily findings, and progress tracking
+author: 
+  name: AI Engineer
+  email: your-email@example.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Resources
+    url: /resources.html
+  - title: Progress
+    url: /progress.html
+  - title: About
+    url: /about.html
+
+# Collections
+collections:
+  resources:
+    output: true
+    permalink: /resources/:path/
+  logs:
+    output: true
+    permalink: /logs/:path/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Resources - Tech Studio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>Tech Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i> AI/ML Resources</h1>
+            <p>Curated collection of tools, tutorials, papers, and frameworks</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search resources...">
+            </div>
+            <div class="filter-tags">
+                <button class="filter-tag active" data-filter="all">All</button>
+                <button class="filter-tag" data-filter="ml">Machine Learning</button>
+                <button class="filter-tag" data-filter="dl">Deep Learning</button>
+                <button class="filter-tag" data-filter="cv">Computer Vision</button>
+                <button class="filter-tag" data-filter="nlp">NLP</button>
+                <button class="filter-tag" data-filter="tools">Tools</button>
+                <button class="filter-tag" data-filter="papers">Papers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Content -->
+    <section class="resources-content">
+        <div class="container">
+            
+            <!-- Machine Learning Section -->
+            <div id="ml" class="resource-section" data-category="ml">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-robot"></i> Machine Learning
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon ml">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Scikit-learn Documentation</h3>
+                        <p>Comprehensive ML library for Python with extensive tutorials and examples</p>
+                        <div class="resource-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Beginner-Friendly</span>
+                        </div>
+                        <a href="https://scikit-learn.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon ml">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Machine Learning Crash Course</h3>
+                        <p>Google's fast-paced, practical introduction to machine learning</p>
+                        <div class="resource-tags">
+                            <span class="tag">Free</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                        <a href="https://developers.google.com/machine-learning/crash-course" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon ml">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Kaggle Datasets & Competitions</h3>
+                        <p>Platform for data science competitions with thousands of datasets</p>
+                        <div class="resource-tags">
+                            <span class="tag">Practice</span>
+                            <span class="tag">Community</span>
+                        </div>
+                        <a href="https://www.kaggle.com/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deep Learning Section -->
+            <div id="dl" class="resource-section" data-category="dl">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-brain"></i> Deep Learning
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon dl">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>PyTorch Official Tutorials</h3>
+                        <p>Official PyTorch documentation and comprehensive tutorials</p>
+                        <div class="resource-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Official</span>
+                        </div>
+                        <a href="https://pytorch.org/tutorials/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon dl">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Deep Learning Specialization (Coursera)</h3>
+                        <p>Andrew Ng's comprehensive deep learning course series</p>
+                        <div class="resource-tags">
+                            <span class="tag">Course</span>
+                            <span class="tag">Certified</span>
+                        </div>
+                        <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon dl">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Fast.ai Practical Deep Learning</h3>
+                        <p>Top-down approach to deep learning with practical applications</p>
+                        <div class="resource-tags">
+                            <span class="tag">Free</span>
+                            <span class="tag">Practical</span>
+                        </div>
+                        <a href="https://course.fast.ai/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon dl">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>TensorFlow Hub</h3>
+                        <p>Repository of pre-trained models and reusable ML components</p>
+                        <div class="resource-tags">
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Pre-trained</span>
+                        </div>
+                        <a href="https://www.tensorflow.org/hub" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Vision Section -->
+            <div id="cv" class="resource-section" data-category="cv">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-eye"></i> Computer Vision
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon cv">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Deep Learning for Computer Vision</h3>
+                        <p>Columbia University's comprehensive DLCV course</p>
+                        <div class="resource-tags">
+                            <span class="tag">Course</span>
+                            <span class="tag">Advanced</span>
+                        </div>
+                        <a href="https://www.deeplearningforcomputervision.com/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon cv">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <h3>OpenCV Documentation</h3>
+                        <p>Open source computer vision and machine learning library</p>
+                        <div class="resource-tags">
+                            <span class="tag">Library</span>
+                            <span class="tag">C++/Python</span>
+                        </div>
+                        <a href="https://docs.opencv.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon cv">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Detectron2</h3>
+                        <p>Facebook AI's next-gen object detection and segmentation platform</p>
+                        <div class="resource-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">SOTA</span>
+                        </div>
+                        <a href="https://github.com/facebookresearch/detectron2" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon cv">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>YOLO (You Only Look Once)</h3>
+                        <p>Real-time object detection system implementations</p>
+                        <div class="resource-tags">
+                            <span class="tag">Real-time</span>
+                            <span class="tag">Detection</span>
+                        </div>
+                        <a href="https://github.com/ultralytics/ultralytics" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NLP & LLMs Section -->
+            <div id="nlp" class="resource-section" data-category="nlp">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-language"></i> NLP & Large Language Models
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Hugging Face Transformers</h3>
+                        <p>State-of-the-art NLP models and tools</p>
+                        <div class="resource-tags">
+                            <span class="tag">Transformers</span>
+                            <span class="tag">Pre-trained</span>
+                        </div>
+                        <a href="https://huggingface.co/docs/transformers" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>NLP Course by Hugging Face</h3>
+                        <p>Free comprehensive course on modern NLP techniques</p>
+                        <div class="resource-tags">
+                            <span class="tag">Free</span>
+                            <span class="tag">Comprehensive</span>
+                        </div>
+                        <a href="https://huggingface.co/learn/nlp-course" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h3>LangChain</h3>
+                        <p>Framework for developing applications with LLMs</p>
+                        <div class="resource-tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">Framework</span>
+                        </div>
+                        <a href="https://python.langchain.com/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-fire-alt"></i>
+                        </div>
+                        <h3>LLaMA & Alpaca</h3>
+                        <p>Meta's open-source large language models</p>
+                        <div class="resource-tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Research</span>
+                        </div>
+                        <a href="https://github.com/facebookresearch/llama" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>PEFT & LoRA</h3>
+                        <p>Parameter-Efficient Fine-Tuning techniques for LLMs</p>
+                        <div class="resource-tags">
+                            <span class="tag">Fine-tuning</span>
+                            <span class="tag">Efficient</span>
+                        </div>
+                        <a href="https://github.com/huggingface/peft" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon nlp">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <h3>OpenAI API Documentation</h3>
+                        <p>Official documentation for GPT models and APIs</p>
+                        <div class="resource-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">GPT</span>
+                        </div>
+                        <a href="https://platform.openai.com/docs" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Frameworks Section -->
+            <div id="tools" class="resource-section" data-category="tools">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-tools"></i> Tools & Frameworks
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3>Weights & Biases</h3>
+                        <p>ML experiment tracking, visualization, and collaboration</p>
+                        <div class="resource-tags">
+                            <span class="tag">MLOps</span>
+                            <span class="tag">Tracking</span>
+                        </div>
+                        <a href="https://wandb.ai/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>MLflow</h3>
+                        <p>Open source platform for the ML lifecycle</p>
+                        <div class="resource-tags">
+                            <span class="tag">MLOps</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                        <a href="https://mlflow.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Jupyter Notebooks</h3>
+                        <p>Interactive computing environment for data science</p>
+                        <div class="resource-tags">
+                            <span class="tag">IDE</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                        <a href="https://jupyter.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Ray & Ray Tune</h3>
+                        <p>Distributed computing and hyperparameter tuning</p>
+                        <div class="resource-tags">
+                            <span class="tag">Distributed</span>
+                            <span class="tag">Tuning</span>
+                        </div>
+                        <a href="https://www.ray.io/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fas fa-docker"></i>
+                        </div>
+                        <h3>Docker for ML</h3>
+                        <p>Containerization for reproducible ML environments</p>
+                        <div class="resource-tags">
+                            <span class="tag">DevOps</span>
+                            <span class="tag">Container</span>
+                        </div>
+                        <a href="https://www.docker.com/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon tools">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>DVC (Data Version Control)</h3>
+                        <p>Version control for ML projects and datasets</p>
+                        <div class="resource-tags">
+                            <span class="tag">Version Control</span>
+                            <span class="tag">Data</span>
+                        </div>
+                        <a href="https://dvc.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Papers Section -->
+            <div id="papers" class="resource-section" data-category="papers">
+                <h2 class="resource-category-title">
+                    <i class="fas fa-file-alt"></i> Research Papers & Repositories
+                </h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon papers">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>arXiv.org</h3>
+                        <p>Open-access archive for scientific papers</p>
+                        <div class="resource-tags">
+                            <span class="tag">Papers</span>
+                            <span class="tag">Research</span>
+                        </div>
+                        <a href="https://arxiv.org/list/cs.AI/recent" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon papers">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Papers with Code</h3>
+                        <p>ML papers with code implementations</p>
+                        <div class="resource-tags">
+                            <span class="tag">Implementation</span>
+                            <span class="tag">SOTA</span>
+                        </div>
+                        <a href="https://paperswithcode.com/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon papers">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Semantic Scholar</h3>
+                        <p>AI-powered research tool for scientific literature</p>
+                        <div class="resource-tags">
+                            <span class="tag">Search</span>
+                            <span class="tag">Citations</span>
+                        </div>
+                        <a href="https://www.semanticscholar.org/" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon papers">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Awesome Deep Learning Papers</h3>
+                        <p>Curated list of most cited deep learning papers</p>
+                        <div class="resource-tags">
+                            <span class="tag">Curated</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <a href="https://github.com/terryum/awesome-deep-learning-papers" target="_blank" class="resource-link">
+                            Visit <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-brain"></i> Tech Studio</h3>
+                    <p>Open-source AI/ML resource collection for engineers and researchers</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="progress.html">Progress Log</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Studio. Open Source & Free to Use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/resources.js"></script>
+</body>
+</html>
+

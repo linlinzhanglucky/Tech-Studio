@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Studio - AI Engineer's resource hub for Machine Learning, Deep Learning, Computer Vision, and more">
+    <title>Tech Studio - AI Engineer Resources</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-brain"></i>
+                <span>Tech Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                <span class="gradient-text">AI Engineer</span> Resource Hub
+            </h1>
+            <p class="hero-subtitle">
+                A curated collection of AI/ML resources, papers, tutorials, and daily discoveries
+            </p>
+            <div class="hero-buttons">
+                <a href="resources.html" class="btn btn-primary">
+                    <i class="fas fa-book"></i> Explore Resources
+                </a>
+                <a href="progress.html" class="btn btn-secondary">
+                    <i class="fas fa-chart-line"></i> View Progress
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-bookmark"></i>
+                    <h3 id="resource-count">50+</h3>
+                    <p>Resources</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>20+</h3>
+                    <p>Papers</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-code"></i>
+                    <h3>15+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock"></i>
+                    <h3 id="days-active">100+</h3>
+                    <p>Days Active</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Resource Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="ml">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Algorithms, frameworks, and tutorials for ML</p>
+                    <a href="resources.html#ml" class="category-link">Explore →</a>
+                </div>
+                
+                <div class="category-card" data-category="dl">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Deep Learning</h3>
+                    <p>Neural networks, architectures, and implementations</p>
+                    <a href="resources.html#dl" class="category-link">Explore →</a>
+                </div>
+                
+                <div class="category-card" data-category="cv">
+                    <div class="category-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Image processing, object detection, and segmentation</p>
+                    <a href="resources.html#cv" class="category-link">Explore →</a>
+                </div>
+                
+                <div class="category-card" data-category="nlp">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>NLP & LLMs</h3>
+                    <p>Natural language processing and large language models</p>
+                    <a href="resources.html#nlp" class="category-link">Explore →</a>
+                </div>
+                
+                <div class="category-card" data-category="tools">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <p>PyTorch, TensorFlow, Hugging Face, and more</p>
+                    <a href="resources.html#tools" class="category-link">Explore →</a>
+                </div>
+                
+                <div class="category-card" data-category="papers">
+                    <div class="category-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Research Papers</h3>
+                    <p>Latest papers and implementations</p>
+                    <a href="resources.html#papers" class="category-link">Explore →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Updates -->
+    <section class="recent-updates">
+        <div class="container">
+            <h2 class="section-title">Recent Updates</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Today</span>
+                        <h3>Added new LLM Fine-tuning Resources</h3>
+                        <p>Comprehensive guides on PEFT, LoRA, and QLoRA techniques</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Yesterday</span>
+                        <h3>Completed Vision Transformer Tutorial</h3>
+                        <p>Implemented ViT from scratch using PyTorch</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2 days ago</span>
+                        <h3>New Computer Vision Papers</h3>
+                        <p>Added SOTA object detection and segmentation papers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="progress.html" class="btn btn-outline">View All Updates</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-brain"></i> Tech Studio</h3>
+                    <p>Open-source AI/ML resource collection for engineers and researchers</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="progress.html">Progress Log</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tech Studio. Open Source & Free to Use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
